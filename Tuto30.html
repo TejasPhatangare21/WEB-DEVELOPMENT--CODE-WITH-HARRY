@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            background-color: greenyellow;
+            border: 2px solid yellow;
+            /* display: none; */
+            text-align: center;
+            font-size: 72px;
+        }
+        @media only screen and (min-width:300px) and (max-width:600px)
+        {
+        #first-1{
+                display:block;
+                background-color:green;
+        }
+    }
+
+
+
+            #first-1{
+                color: red;
+                /* background-color: aqua; */
+            }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box" id="first-1">Main Tejas Phatangare Hoon</div>
+    <div class="box" id="first-2">Main Tejas  Phatangare Hoon Nashik Main</div>
+    <div class="box" id="first-3">Main Tejas Navinkumar Phatangare Hoon Shirdi Main </div>
+    <div class="box" id="first-4">Main Tejas Navinkumar Phatangare Hoon Sangamner main</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us Page</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+    
+}
+ 
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    background: url('13.jpg');
+}
+ 
+.about-section{
+    background: url('15.jpg') no-repeat left;
+    
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    height: 100%;
+    padding: 100px 0;
+    border:3px solid black;
+}
+ 
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border: 3px solid black;
+ 
+}
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    
+}
+ 
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+h1{
+  color: #F85370;
+}
+ 
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+ 
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+ 
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+ 
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+span{
+                cursor: pointer;
+                font-size: 16px;
+                text-align: center;
+                padding: 10px;
+                width: 500px;
+}
+
+/* span:hover{
+background-image: linear-gradient(to right top, #f85370, #f35470, #ee5570, #e8556f, #e3566f);
+color: #fff;
+border-radius: 20px;
+transition: 0.5s;
+ 
+}
+.active{
+  background-image: linear-gradient(to right top, #f85370, #f35470, #ee5570, #e8556f, #e3566f);
+  color: #fff;
+  border-radius: 20px;
+ 
+ 
+} */
+        </style>
+    </head>
+    <body>
+        
+        <div class="about-section">
+            <div class="inner-container">
+                <h1>About Us</h1>
+                <p class="text">
+                    We love restaurants as much as you do. That’s why we’ve been helping them fill tables since 1999. Whether you’re browsing for a quick bite or planning a big night, Restaurant.com will help you discover the perfect dining experience. Your new favorite restaurant is out there – go ahead, dig in!</p>
+
+
+                <div class="skills">
+                    <span class="active">Our Branches</span>
+
+                    <span><a href="https://www.instagram.com/__tejas_phatangare__/" target="_blank">Follow Us-Instagram</a></span>
+                    <span><a href="https://www.youtube.com/watch?v=UNis5FHbAZg" target="_blank">Follow Us-Youtube</a></span>
+                        <!-- <ul>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>YouTube</li>
+                        </ul> -->
+                    
+                </div>
+            </div>
+        </div>
+    
+    </body>
+    </html>

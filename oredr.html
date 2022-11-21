@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order now</title>
+    <style>
+        
+    th{
+    text-align:left;
+    }
+
+            body{
+            font-size: 20pt;
+            background-color: black;
+            /* background: url('13.jpg'); */
+                }
+
+                        .button {
+                                    background-color: gray;
+                                    border: 2px solid black;
+                                    color: white;
+                                    padding: 4px 53px;
+                                    margin-right:14px;
+                                    /* margin-left: 20px; */
+                                    text-align: center;
+                                    text-decoration: none;
+                                    display: inline-block;
+                                    font-size: 12px;
+                                    float: center;
+                                }
+
+                                div {
+                                    text-align: center;
+                                    border-style: solid;
+                                    margin-left: 300px;
+                                    width:60%
+                                   
+                                    }
+                                #alignment  {
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    text-align: justify;
+                                    border-radius: 100px solid red;
+
+                                            }
+                                .item1{
+                                    text-align: justify;
+                                }
+
+                                .forcolor{
+                                    background-color: khaki;
+                                }
+    </style>
+</head>
+<body>
+    <body >  
+        <html> 
+<head>
+<title>FOOD ORDER FORM</title>
+<link rel="stylesheet" type="text/css" href="formCssFile.css">
+<script type="text/javascript" src="scriptfile.js">  </script> </head>
+</html >
+        <div class="forcolor"> 
+        <h2>==========<u>Price list</u>==========</h2> 
+    <table width="40%" id="alignment" > 
+        <tr>  
+        <th>Food Item</th> 
+        <th></th>
+        <th>Price(Rs.)</th>
+        </tr> 
+        <tr>
+        <td>Chicken pizza</td> 
+        <td> - </td>
+        <td>200.00</td> 
+        </tr> 
+        <tr>
+        <td>Veg Pizza</td>
+        <td> - </td> 
+        <td>150.00</td> 
+        </tr>
+        <tr> 
+        <td>Chiken Kottu</td>
+        <td> - </td>  
+        <td>130.00</td>
+        </tr> 
+        <tr>  
+        <td>Veg Kottu </td>
+        <td> - </td> 
+        <td>120.00</td> 
+        </tr>  
+        <tr>
+        <td>Water Bottle</td>
+        <td> - </td> 
+        <td>20.00</td>
+        </tr>
+        </table>
+
+
+    <h3><u>Food Order Form</u></h3>
+        <table style="background-color:rgb(152, 216, 195);margin-left: 100px;"> 
+       
+    <form name="tblform" >
+        <table width="80%"  id="alignment" >
+        <tr>
+        <th>Food Item</th>
+        <th> </th>
+        <th>Quantity</th>
+        <th>Price</th> 
+        </tr>
+        <tr> 
+        <td>Item 1:</td> 
+        <td>
+        <select id="item1">
+        <option value="1">--Select Item--</option> 
+        <option value="Chicken pizza">Chicken pizza</option> 
+        <option value="Veg Pizza">Veg Pizza</option> 
+        <option value="Chicken Kottu">Chicken Kottu</option> 
+        <option value="Veg Kottu">Veg Kottu</option> 
+        <option value="Water Bottle ">Water Bottle </option> 
+        </select>
+        </td> 
+        <td><input type="number" value="0" id="q1"></td>
+        <td><input type="text" id="p1"></td>
+        </tr>   
+        <tr>
+        <td>Item 2:</td>
+        <td>
+        <select id="item2"> 
+        <option value="1">--Select Item--</option> 
+        <option value="Chicken pizza">Chicken pizza</option> 
+        <option value="Vegetable Pizza">Vegetable Pizza</option> 
+        <option value="Chicken Kottu">Chicken Kottu</option>  
+        <option value="Vegetable Kottu">Vegetable Kottu</option>
+        <option value="Water Bottle ">Water Bottle </option>  
+        </select>
+        </td>
+        <td><input  type="number" value="0" id="q2"></td>  
+        <td><input type="text"  id="p2"></td>  
+        </tr> 
+        <tr>
+        <td>Item 3:</td>
+        <td><select id="item3">  
+        <option value="1">--Select Item--</option> 
+        <option value="Chicken pizza">Chicken pizza</option>  
+        <option value="Vegetable Pizza">Vegetable Pizza</option> 
+        <option value="Chicken Kottu">Chicken Kottu</option>
+        <option value="Vegetable Kottu">Vegetable Kottu</option> 
+        <option value="Water Bottle ">Water Bottle </option> 
+        </select>
+        </td>
+        <td><input type="number" value="0" id="q3"></td>
+        <td><input type="text"  id="p3"></td> 
+        </tr> 
+        <tr>
+        <td>Item 4:</td>
+        <td><select id="item4">   
+        <option value="1">--Select Item--</option> 
+        <option value="Chicken pizza">Chicken pizza</option>   
+        <option value="Vegetable Pizza">Vegetable Pizza</option> 
+        <option value="Chicken Kottu">Chicken Kottu</option> 
+        <option value="Vegetable Kottu">Vegetable Kottu</option> 
+        <option value="Water Bottle ">Water Bottle </option>   
+        </select>
+        </td>
+        <td><input type="number" value="0" id="q4"></td>
+        <td><input type="text"  id="p4"></td> 
+        </tr>    
+        <tr>
+        <td></td> 
+        <td></td> 
+        <td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+        <td><input type="reset" class="button" value="Clear"></td>
+        </tr>
+        </table>
+    </div>
+        </form> 
+</body>
+</html>

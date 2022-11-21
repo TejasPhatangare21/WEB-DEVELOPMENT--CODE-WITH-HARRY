@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu In CSS</title>
+    <style>
+        .navbar{
+            background-color:black;
+            border-radius: 30px;
+        }
+
+        .navbar li{
+            list-style: none;
+            float: left;
+            padding:6px 3px; 
+            margin: 13px 3px;   
+        }
+        .navbar li:hover{
+            background-color: darkgoldenrod;
+        } 
+        
+        .navbar li:hover{
+            color: darkgoldenrod;
+        } 
+
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color:white;  
+        }
+        .navbar input{
+            border: 3px solid white(79, 173, 199);
+            border-radius: 12px;
+            margin-right: 3px ;
+            margin-top: 15px;
+            margin-left: 700px;
+            width: 129px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href= "https://www.google.com/"  target="_blank" >Home</a></li>
+                <li><a href="https://www.facebook.com/login.php">Services</a></li>
+                <li><a href="https://in.search.yahoo.com/?fr2=inr">About Us</a></li>
+                <li><a href="https://twitter.com/">Contact Us</a></li>
+                    <div class="searchbox">
+                     <input type="search" id="tsearch" name="tsearch" placeholder="Search">
+                    </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
