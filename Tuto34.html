@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            border: 3px solid Gray;
+            height: 300px;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            border: 3px solid red;
+            height: 120px;
+            width: 200px;
+            /* padding: 20px 30px; */
+            background-color: aqua;
+            text-align: justify;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: -05px -05px green;
+            box-shadow: 3px 3px 3px blue;
+            /* box-shadow: inset 3px 4px 2px yellowgreen; */
+            text-shadow: 1px 1px rgb(236, 104, 11);
+        }
+        .box1{
+            display: flex;
+            align-items: center;
+            height: 120px;
+            width: 200px;
+            border: 3px solid red;
+            /* margin: 10px; */
+            /* padding: 20px 30px; */
+            background-color: aqua;
+            text-align: justify;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 05px 05px green;
+            box-shadow: 3px 3px 3px rgb(37, 255, 4);
+             /* /* box-shadow: inset 3px 4px 2px yellowgreen; */
+             text-shadow: 1px 1px rgb(255, 14, 179);
+             animation-name: tejas;
+             animation-duration: 2 s;
+             animation-iteration-count: 2;
+        }
+        @keyframe tejas{
+            form{
+                width:100px;
+            }
+            to{
+                width:200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+
+        <div class="box1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nemo expedita ex ssitatibus iure nobis ipsa iusto hic!</p>
+        </div>
+    </div>
+</body>
+</html>

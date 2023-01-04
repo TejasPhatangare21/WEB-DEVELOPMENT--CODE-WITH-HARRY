@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning In rows and columns</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows:repeat(1,1fr);
+            grid-row-gap: 7rem;
+            grid-column-gap: 2rem;
+            grid-gap: 2rem;
+        }
+       
+        .box{
+            background-color: chocolate;
+            border: 2px solid rgb(9, 249, 117);
+            padding: 23px;
+        }
+        .box:first-child{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+        .box:first-child{
+
+         grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ <div class="box">item-1</div>
+ 
+</div>
+</body>
+</html>

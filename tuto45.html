@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquery for grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'footer footer footer footer';
+        }
+
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            aside{
+                display: none;
+            }
+
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: rgb(233, 6, 203);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            aside{
+                display: none;
+            }
+
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: rgb(28, 4, 206);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            aside{
+                display: none;
+            }
+
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: rgb(237, 10, 63);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            aside{
+                display: none;
+            }
+
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .tejas {
+            background-color: greenyellow;
+            border: 3px solid black;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="tejas">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Sign In</span>
+            <span>Login</span>
+        </nav>
+
+        <section class="tejas">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, qui? Quas aperiam ratione
+            officia culpa alias cumque maiores, labore dolorum.</section>
+
+
+        <aside class="tejas">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis aliquid enim
+            repellendus, sapiente itaque a quasi nemo provident nulla magnam!</aside>
+    </div>
+
+    <footer class="tejas">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati tempore maiores incidunt
+        repellat.</footer>
+</body>
+
+</html>

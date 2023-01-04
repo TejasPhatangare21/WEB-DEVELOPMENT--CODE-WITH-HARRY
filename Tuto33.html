@@ -5,8 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before And After Pseudo Selectors</title>
+    <style>
+         body{
+                margin: 20px;
+                padding: 20px;
+                background-color: black;
+                color: white;
+    }
+
+    header::before{
+        content: "";
+        background: url('18.jpg');
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    .navigation{
+        display: flex;
+        font-family: ;
+      
+    }
+    
+      li{
+        margin: 10px 40px;
+        padding: 10px;
+        list-style: none;
+    }
+    section{
+        height: 100%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin: 0px;
+        margin-right: 00px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        text-align: center;
+    }
+        </style>
 </head>
 <body>
-    
+   <header>
+    <nav class="navbar">
+        <ul class="navigation">
+            <li class="item">Home</li>
+            <li class="item">About Us</li>
+            <li class="item">Contact Us</li>
+            <li class="item">Follow Us</li>
+        </ul>
+     </nav>
+   </header>
+
+   <section>
+    <h1>Code With- Tejas</h1>
+    <p>Welcome Everyone We Are Going To Learn The Css In This Tutorials.</p>
+   </section>
+   <hr>
 </body>
 </html>

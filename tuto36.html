@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe And Animation</title>
+    <style>
+        #container{
+            background-color: gold;
+            height: 200px;
+            width: 200px;
+            animation-name: tejas;
+            animation-duration: 0.6s;
+            animation-iteration-count: infinite;
+            /* animation-iteration-count: infinite; */
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-out;
+            animation-delay: 5s;
+            animation-direction: reverse;
+            animation-direction: alternate;
+        }
+        @keyframes tejas {
+
+            from{
+                width: 300px;
+            }
+            to{
+                width: 500px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>This is An Keyframe And Animation</h3>
+    <div id="container">This is Animation</div>
+</body>
+</html>
